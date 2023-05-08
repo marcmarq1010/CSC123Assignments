@@ -8,6 +8,4 @@ public class Messages
     public static final String ERROR_DIRECTORY = "Error: The source or target file is a directory.";
     public static final String ERROR_FILE_EXISTS = "Error: The target file already exists.";
 	public static final String COPY_COMPLETE = "File copy complete.";
-
-
 }

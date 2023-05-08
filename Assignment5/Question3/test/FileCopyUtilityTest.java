@@ -6,16 +6,19 @@ import fileCopyUtility.FileCopyUtility;
 public class FileCopyUtilityTest 
 {
 	public static void main(String[] args) 
-	{
-	    // Check if two arguments are provided
-	    if (args.length != 2) 
-	    {
-	    	// Prints an error message
-	        System.err.println(Messages.ERROR_NOT_ENOUGH_ARGUMENTS);
-	        
-	        // Exit with an error status
-	        System.exit(1);
-	    }
+	{   
+	    	// Check if two arguments are provided
+		    if (args.length != 2) 
+		    {
+		    	// Prints an error message
+		        System.err.println(Messages.ERROR_NOT_ENOUGH_ARGUMENTS);
+		        
+		        // Exit with an error status
+		        System.exit(1);
+		    }
+	    
+		// Create an instance of FileCopyUtility
+	    FileCopyUtility fileCopyUtility = new FileCopyUtility(args[0], args[1]);
 	}
 
 
