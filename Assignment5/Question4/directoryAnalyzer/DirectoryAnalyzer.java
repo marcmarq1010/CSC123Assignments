@@ -10,9 +10,12 @@ public class DirectoryAnalyzer
 {
 	private String directory;
 	
-	public DirectoryAnalyzer(String directory)
+	public DirectoryAnalyzer(String directory) throws IOException
 	{
 		this.directory = directory;
+		
+		validateDirectory();
+		extractFileInfo();
 	}
 	
 	public String getDirectory() 
