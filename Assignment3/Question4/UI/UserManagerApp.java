@@ -27,9 +27,12 @@ public class UserManagerApp
 			case 2:
 				ListUsers();
 				break;
-				default:
-					System.out.println(Messages4.MENU_INVALID_CHOICE);
-					break;
+			case 3:
+				System.out.println(Messages4.MENU_EXITING);
+				break;
+			default:
+				System.out.println(Messages4.MENU_INVALID_CHOICE);
+				break;
 			}
 			
 		}while(choice != 3);
